@@ -151,9 +151,24 @@ h1 {
 }
 .content {
   display: flex;
+  position: relative;
   flex: 1;
   flex-direction: column;
   justify-content: space-between;
+  background-image: url("./kantor-bupati.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.content::after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.2;
 }
 .content header {
   padding: 2rem;
@@ -195,7 +210,10 @@ canvas {
   align-items: center;
   justify-content: center;
   margin: auto 0;
+  position: relative;
+  z-index: 5;
 }
+
 .auth-content {
   width: 100%;
   padding: 2rem;
@@ -204,7 +222,9 @@ canvas {
   backdrop-filter: blur(8px);
   box-shadow: 0 0 5px gray;
   border-radius: 15px;
+  opacity: 0.8;
 }
+
 .form-vertical {
   display: flex;
   align-items: center;
