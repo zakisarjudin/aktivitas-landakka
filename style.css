@@ -16,6 +16,7 @@
   --input-border-color: rgb(0, 0, 0);
   --btn-google-bg: rgb(255, 255, 255);
   --btn-google-border-color: rgb(0, 0, 0);
+  --bg-custom: #300064;
 
   /* Responsive fonts */
   --ratio: 1.15;
@@ -184,11 +185,6 @@ canvas {
   display: block;
 }
 
-#particles {
-  height: 100%;
-  position: absolute;
-}
-
 .image-logo {
   max-width: 100%;
 }
@@ -212,6 +208,7 @@ canvas {
   margin: auto 0;
   position: relative;
   z-index: 5;
+  padding: 0 1rem;
 }
 
 .auth-content {
